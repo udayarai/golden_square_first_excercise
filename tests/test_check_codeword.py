@@ -9,3 +9,9 @@ def test_check_horse_input():
 
 def test_check_startswith_h_and_endswith_e():
     assert check_codeword("hose") == "Close, but nope."
+
+def test_with_correct_startletter_but_wrong_endletter():
+    assert check_codeword("hammer") == "WRONG!"
+
+def test_with_wrong_startletter_but_correct_endletter():
+    assert check_codeword("bee") == "WRONG!"
